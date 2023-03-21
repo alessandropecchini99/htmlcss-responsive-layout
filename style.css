@@ -41,6 +41,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
 nav .container {
@@ -228,7 +229,12 @@ main .testimonials {
     padding-bottom: 2.5em;
 }
 
-main .testimonials div:first-child p, h2 {
+main .testimonials div:first-child p {
+    text-align: center;
+    line-height: 2em;
+}
+
+main .testimonials div:first-child h2 {
     text-align: center;
     line-height: 2em;
 }
@@ -241,7 +247,7 @@ main .testimonials #top-testimonials p:last-child {
     margin-bottom: 2em;
 }
 
-main .testimonials div h2 {
+main .testimonials #top-testimonials h2 {
     color: rgb(151,146,227);
 }
 
@@ -379,8 +385,9 @@ main .testimonials .card-testimonial img {
 .about-flex #about-img h3 {
     color: rgb(151,146,227);
     font-size: 1.3em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 80%;
 }
 
 .about-flex #about-img button {
@@ -391,3 +398,81 @@ main .testimonials .card-testimonial img {
     padding: 0.5em 1em;
 }
 
+/* GET STARTED */
+.bck-star {
+    background-color: rgb(151,146,227);
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.get-star {
+    color: white;
+    text-align: center;
+}
+
+.get-star p {
+    font-size: 0.9em;
+    width: 55%;
+    margin-inline: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.get-star h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.get-star h1 {
+    font-size: 4em;
+    color: rgb(253,192,95);
+}
+
+.get-star button {
+    background-color: white;
+    color: rgb(151,146,227);
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border: 0px;
+    border-radius: 100px;
+    padding: 1.5em 3.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.get-star a {
+    color: white;
+}
+
+.get-star #copyright-star {
+    font-size: 0.8em;
+}
+
+
+/***************************************
+    FOOTER
+***************************************/
+footer {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer .small-container {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+footer div p:first-child {
+    margin-bottom: 2em;
+}
+
+footer p {
+    width: 45%;
+    margin-inline: auto;
+}
+
+footer a {
+    color: rgb(151,146,227);
+}
