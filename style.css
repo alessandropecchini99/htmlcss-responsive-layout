@@ -306,25 +306,25 @@ main .testimonials .card-testimonial img {
     padding-bottom: 3em;
 }
 
-.benefits #benefit-card {
+.benefits .benefit-card {
     border-radius: 20px;
     flex-basis: calc((100% - 2 * 2em) / 3);
     background-color: white;
     padding: 1em;
 }
 
-.benefits #benefit-card h1 {
+.benefits .benefit-card h3 {
     color: rgb(151,146,227);
     font-size: 3em;
 }
 
-.benefits #benefit-card :nth-child(2) {
+.benefits .benefit-card :nth-child(2) {
     color: rgb(151,146,227);
     font-weight: bold;
     font-size: 1.2em;
 }
 
-.benefits #benefit-card :nth-child(3) {
+.benefits .benefit-card :nth-child(3) {
     font-size: 0.8em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -332,7 +332,7 @@ main .testimonials .card-testimonial img {
     color: grey;
 }
 
-.benefits #benefit-card button {
+.benefits .benefit-card button {
     background-color: rgb(151,146,227);
     color: white;
     border: 0px;
