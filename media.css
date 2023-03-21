@@ -42,6 +42,10 @@
         margin-top: 2em;
     }
 
+    header .jumbo-flex {
+        gap: 2em;
+    }
+
 
     /********** MAIN **********/
 
@@ -156,5 +160,134 @@
     footer p {
         font-size: 1em;
         width: 70%;
+    }
+}
+
+/**************
+    MOBILE
+**************/
+@media screen and (max-width: 375px) {
+
+    /* container */
+    .container {
+        width: 80%;
+    }
+
+    /******** HEADER ********/
+    /* nav */
+    nav {
+        height: 8vh;
+        width: 100vw;
+    }
+
+    nav .container img {
+        height: 5vh;
+    }
+
+    nav .container i {
+        display: block;
+        font-size: 5vh;
+    }
+
+    nav .container ul {
+        display: none;
+    }
+
+    /* jumbo */
+    .jumbo .jumbo-phone {
+        flex-basis: 100%;
+    }
+
+    .jumbo-phone #jumbo-img {
+        justify-content: center;
+    }
+
+    header .jumbo-phone img {
+        margin-inline: auto;
+    }
+
+    header .jumbo-flex {
+        flex-basis: 100%;
+    }
+
+
+    /******** MAIN ********/
+    /* STRATEGIC PLAN */
+    #planning h3 {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+
+    /* TESTIMONIALS */
+    main .testimonials div:first-child h2 {
+        line-height: 1.2em;
+        font-size: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    /* card testimonials */
+    main .testimonials .card-testimonial {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+
+    main .testimonials .card-testimonial div {
+        margin-bottom: 1.5em;
+    }
+
+    main .testimonials .card-testimonial div p:first-child {
+        margin-inline: auto;
+    }
+
+    main .testimonials .card-testimonial img {
+        width: 50%;
+    }
+
+    /* BENEFITS */
+    .benefits #benefit-card {
+        flex-basis: 100%;
+    }
+
+    .benefits #benefit-card :nth-child(3) {
+        width: 95%;
+    }
+
+    /* ABOUT US */
+    .about-flex {
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    /* text */
+    .about-flex #about-text {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    /* img */
+    .about-flex #about-img {
+        flex-basis: 100%;
+    }
+
+    /* GET STARTED */
+    .get-star h3 {
+        font-size: 2em;
+    }
+
+    .get-star h1 {
+        font-size: 3.5em;
+    }
+
+    .get-star p {
+        font-size: 1em;
+        width: 85%;
+    }
+
+    /******** FOOTER ********/
+    footer p {
+        font-size: 0.8em;
+        width: 100%;
     }
 }
