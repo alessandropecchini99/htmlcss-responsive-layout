@@ -4,3 +4,390 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin-inline: auto;
+}
+
+.small-container {
+    width: 55%;
+    margin-inline: auto;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+
+/***************************************
+    HEADER
+***************************************/
+
+/* NAV */
+nav {
+    background-color: rgb(0,132,253);
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+nav .container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+nav .container li button {
+    background-color: white;
+    padding: 0.5em 1em;
+    border: 0px;
+    border-radius: 20px;
+}
+
+/* JUMBO */
+header .jumbo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+}
+
+header .jumbo .jumbo-bkc {
+    background-color: rgb(181,221,255);
+    border-radius: 10px;
+}
+
+.jumbo h3 {
+    color: rgb(0,132,253);
+}
+
+.jumbo p {
+    color: rgb(50, 50, 50);
+    line-height: 1.8em;
+}
+
+/* big-jumbo */
+.jumbo-phone {
+    flex-basis: calc(2 * ((100% - 2 * 1em) / 3) + 1em);
+    display: flex;
+}
+
+.jumbo-phone #jumbo-text {
+    flex: 0 0 50%;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+}
+
+.jumbo-phone h3 {
+    margin-bottom: 1.5em;
+}
+
+.jumbo-phone div button{
+    background-color: rgb(0,132,253);
+    border: 0px;
+    border-radius: 20px;
+    color: white;
+    padding: 0.6em 3em;
+    margin-top: 2em;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+}
+
+.jumbo-phone #jumbo-img {
+    aspect-ratio: 1 / 1;
+    flex: 0 0 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.jumbo-phone img {
+    width: 250px;
+}
+
+/* normal-jumbo */
+header .jumbo-flex {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    flex-basis: calc((100% - 2 * 1em) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.jumbo-flex i {
+    font-size: 5em;
+    color: rgb(0,132,253);
+}
+
+.jumbo-flex p {
+    text-align: center;
+    width: 90%;
+}
+
+
+/***************************************
+    MAIN
+***************************************/
+
+/* STRATEGIC PLAN */
+#bkc-strat {
+    background-color: rgb(151,146,227);
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+#bck-strat img{
+    width: 100%;
+}
+
+#bkc-strat .flex-strat {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+/* planning */
+#planning {
+    flex-basis: calc((100% - 3em) / 2.2);
+    color: white;
+}
+
+#planning img {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+
+#planning h3 {
+    margin-bottom: 1.5em;
+}
+
+/* card */
+#card-flex-strat {
+    flex-basis: calc((100% - 3em) / 2.2);
+    display: flex;
+    align-items: flex-end;
+}
+
+#card-strat {
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-strat img{
+    width: 55%;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#card-strat p {
+    width: 85%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    line-height: 1.8em;
+    font-style: italic;
+}
+
+#card-strat #card-arrow-strat {
+    background-color: rgb(151,146,227);
+    border-radius: 100px;
+    margin-bottom: 2em;
+    padding: 0.5em 0.9em;
+}
+
+/* TESTIMONIALS */
+main .testimonials {
+    padding-bottom: 2.5em;
+}
+
+main .testimonials div:first-child p, h2 {
+    text-align: center;
+    line-height: 2em;
+}
+
+main .testimonials #top-testimonials p:first-child {
+    margin-top: 3em;
+}
+
+main .testimonials #top-testimonials p:last-child {
+    margin-bottom: 2em;
+}
+
+main .testimonials div h2 {
+    color: rgb(151,146,227);
+}
+
+/* card testimonials */
+main .testimonials .card-testimonial {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background-color: rgb(151,146,227);
+    border-radius: 20px;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+main .testimonials .card-testimonial div {
+    color: white;
+}
+
+main .testimonials .card-testimonial div p:first-child {
+    width: 97%;
+    margin-bottom: 1em;
+}
+
+main .testimonials .card-testimonial div p:last-child {
+    font-weight: bold;
+}
+
+main .testimonials .card-testimonial img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100px;
+    margin: 1em 0.7em;
+}
+
+/* BENEFITS */
+.bck-benefits {
+    background-color: rgb(151,146,227);
+}
+
+.benefits h2 {
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.benefits #benefits-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding-bottom: 3em;
+}
+
+.benefits #benefit-card {
+    border-radius: 20px;
+    flex-basis: calc((100% - 2 * 2em) / 3);
+    background-color: white;
+    padding: 1em;
+}
+
+.benefits #benefit-card h1 {
+    color: rgb(151,146,227);
+    font-size: 3em;
+}
+
+.benefits #benefit-card :nth-child(2) {
+    color: rgb(151,146,227);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.benefits #benefit-card :nth-child(3) {
+    font-size: 0.8em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 90%;
+    color: grey;
+}
+
+.benefits #benefit-card button {
+    background-color: rgb(151,146,227);
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    padding: 0.5em 2em;
+}
+
+/* ABOUT US */
+.about-flex {
+    display: flex;
+    gap: 5em;
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+
+/* text */
+.about-flex #about-text {
+    flex-basis: 80%;
+}
+
+.about-flex #about-text h1 {
+    font-size: 2.8em;
+    color: rgb(151,146,227);
+}
+
+.about-flex #about-text p {
+    line-height: 2em;
+    margin-top: 1em;
+}
+
+/* img */
+.about-flex #about-img {
+    flex-basis: 20%;
+}
+
+.about-flex #big-commas {
+    position: relative;
+    width: fit-content;
+}
+
+.about-flex #about-img .about-commas {
+    position: absolute;
+    right: 0;
+    font-size: 3.5em;
+    color: rgb(151,146,227);
+}
+
+.about-flex #about-img img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.about-flex #about-img h3 {
+    color: rgb(151,146,227);
+    font-size: 1.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-flex #about-img button {
+    background-color: rgb(151,146,227);
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+}
+
