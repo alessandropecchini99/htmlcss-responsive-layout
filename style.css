@@ -96,6 +96,7 @@ header .jumbo .jumbo-bkc {
 
 .jumbo-phone #jumbo-text {
     flex: 0 0 50%;
+    width: 50%;
     margin-top: 1.5em;
     margin-left: 1.5em;
 }
@@ -116,14 +117,13 @@ header .jumbo .jumbo-bkc {
 }
 
 .jumbo-phone #jumbo-img {
-    aspect-ratio: 1 / 1;
-    flex: 0 0 50%;
+    flex: 0 1 50%;
     display: flex;
     align-items: flex-end;
 }
 
 .jumbo-phone img {
-    width: 250px;
+    max-width: 250px;
 }
 
 /* normal-jumbo */
