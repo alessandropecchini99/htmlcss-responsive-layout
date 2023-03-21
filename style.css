@@ -65,6 +65,10 @@ nav .container li button {
     border-radius: 20px;
 }
 
+nav .container i {
+    display: none;
+}
+
 /* JUMBO */
 header .jumbo {
     display: flex;
@@ -110,7 +114,7 @@ header .jumbo .jumbo-bkc {
     border: 0px;
     border-radius: 20px;
     color: white;
-    padding: 0.6em 3em;
+    padding: 0.8em 3.5em;
     margin-top: 2em;
     font-size: 1em;
     letter-spacing: 0.2em;
@@ -291,6 +295,7 @@ main .testimonials .card-testimonial img {
 
 .benefits h2 {
     color: white;
+    text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -341,14 +346,17 @@ main .testimonials .card-testimonial img {
 /* ABOUT US */
 .about-flex {
     display: flex;
-    gap: 5em;
+    justify-content: space-between;
     margin-top: 4em;
     margin-bottom: 3em;
+    width: 65%;
+    margin-inline: auto;
 }
 
 /* text */
 .about-flex #about-text {
     flex-basis: 80%;
+    max-width: 70%;
 }
 
 .about-flex #about-text h1 {
@@ -357,8 +365,8 @@ main .testimonials .card-testimonial img {
 }
 
 .about-flex #about-text p {
-    line-height: 2em;
-    margin-top: 1em;
+    line-height: 2.2em;
+    margin-top: 2em;
 }
 
 /* img */
@@ -457,7 +465,6 @@ footer {
     background-color: rgb(32, 32, 32);
     color: white;
     text-align: center;
-    font-size: 0.8em;
 }
 
 footer .small-container {
@@ -470,6 +477,7 @@ footer div p:first-child {
 }
 
 footer p {
+    font-size: 0.8em;
     width: 45%;
     margin-inline: auto;
 }
