@@ -120,6 +120,7 @@ header .jumbo .jumbo-bkc {
     flex: 0 1 50%;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .jumbo-phone img {
