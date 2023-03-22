@@ -246,11 +246,11 @@
     }
 
     /* BENEFITS */
-    .benefits #benefit-card {
+    .benefits .benefit-card {
         flex-basis: 100%;
     }
 
-    .benefits #benefit-card :nth-child(3) {
+    .benefits .benefit-card :nth-child(3) {
         width: 95%;
     }
 
